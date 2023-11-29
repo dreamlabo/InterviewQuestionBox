@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-100: #121212;
+    --clr-200: #282828;
+    --clr-300: #3f3f3f;
+    --clr-400: #575757;
+    --clr-500: #717171;
+    --clr-600: #8b8b8b;
+    --clr-700: #e3dede;
+
+    --clr-primary-accent: #03dac5;
+    --clr-primary-accent: #BB86FC;
+    --clr-primary-accent: #00796b;
+}
+
+body {
+    background: var(--clr-100);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--clr-600);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--clr-700);
+}
+
+.box:focus-visible,
+.box:hover {
+    background: var(--clr-500);
+    color: var(--clr-100);
+}
+
+.box.active {
+    background: var(--clr-primary-accent);
+    color: var(--clr-700);
+}
