@@ -19,7 +19,7 @@ boxes.forEach((box) => {
             case KEYPRESS_TYPE: 
                 box.addEventListener(KEYPRESS_TYPE, (Event) => {
                     if (Event.key !== 'Enter') {
-                        return
+                        return;
                     }
                     handleListeners(box);
                 });
@@ -35,7 +35,7 @@ function handleListeners(element) {
     
     if(boxes.length === clickedBoxes.length) {
         document.activeElement.blur();
-        setTimeout(unColorBoxes, TIMER_VALUE)
+        setTimeout(unColorBoxes, TIMER_VALUE);
     }
 }
 
@@ -71,7 +71,6 @@ function removeChild() {
 }
 
 function appendBoxOrderSection(id) {
-    console.log(id)
     const textTemplate = document.getElementById("clicked-box-template");
     const item = textTemplate.content.cloneNode(true);
     item.querySelector('.clicked-item').innerText = id;

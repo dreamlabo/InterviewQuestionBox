@@ -19,19 +19,35 @@
             </header>
         </div>
     </div>
-    <div class="flex">
-        <div id="box-1" class="box" tabindex="0">1</div>
-        <div id="box-2" class="box" tabindex="0">2</div>
-        <div id="box-3" class="box" tabindex="0">3</div>
-        <div id="box-4" class="box" tabindex="0">4</div>
-        <div id="box-5" class="box" tabindex="0">5</div>
-        <div id="box-6" class="box" tabindex="0">6</div>
-    </div>
-    <div class="clicked-order-container">
-        <h2>Clicked Order</h2>
-        <div id="clicked-order">
+    <main>
+        <div class="info-section-wrapper">
+            <div class="info-section">
+                <h2>Welcome to the Click Box Challenge!</h2>
+                <p>
+                    This project is a solution to a frontend interview 
+                    question where the goal is to create a user 
+                    interface with six boxes. 
+                </p>
+                <p>The user can click 
+                    on each box to change its color, and when all 
+                    boxes are clicked, they each return to their original 
+                    color in reverse order.</p>
+            </div>
         </div>
-    </div>
+        <div class="flex">
+            <div id="box-1" class="box" tabindex="0">1</div>
+            <div id="box-2" class="box" tabindex="0">2</div>
+            <div id="box-3" class="box" tabindex="0">3</div>
+            <div id="box-4" class="box" tabindex="0">4</div>
+            <div id="box-5" class="box" tabindex="0">5</div>
+            <div id="box-6" class="box" tabindex="0">6</div>
+        </div>
+        <div class="clicked-order-container">
+            <h2>Clicked Order</h2>
+            <div id="clicked-order">
+            </div>
+        </div>
+    </main>
 
     <template id="clicked-box-template">
         <p class="clicked-item"></p>

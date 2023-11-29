@@ -62,6 +62,34 @@ a {
     font-weight: 500;
 }
 
+
+.info-section-wrapper {
+    width: calc(100% - 4rem);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.info-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--clr-700);
+}
+
+.info-section h2 {
+    margin: 1em 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.info-section p {
+    margin-bottom: .3em;
+    font-size: .9rem;
+    font-weight: 400;
+    max-width: 50ch;
+    opacity: .9;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -71,17 +99,17 @@ a {
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    border: 1px solid var(--clr-600);
-    border-radius: 5px;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100px;
+    height: 100px;
+    background: inherit;
+    border: 1px solid var(--clr-600);
+    border-radius: 5px;
     font-size: 1.5rem;
     color: var(--clr-700);
-    background: inherit;
+    cursor: pointer;
 }
 
 .box.active {
@@ -92,17 +120,19 @@ a {
 .clicked-order-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
     margin-top: 3rem;
     color: var(--clr-700);
     font-weight: 400;
-    flex-direction: column;
 }
 
 .clicked-order-container h2 {
     margin-bottom: .3em;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .clicked-order-container p {
-    font-weight: 300;
     margin-bottom: .3em;
+    font-weight: 300;
 }
