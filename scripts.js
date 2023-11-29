@@ -59,7 +59,7 @@ function unColorBoxes()  {
     else {
         boxes.forEach(box => {
             box.setAttribute('tabindex', '0');
-        })
+        });
     }
 }
 

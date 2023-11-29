@@ -81,12 +81,7 @@ a {
     align-items: center;
     font-size: 1.5rem;
     color: var(--clr-700);
-}
-
-.box:focus-visible,
-.box:hover {
-    background: var(--clr-500);
-    color: var(--clr-100);
+    background: inherit;
 }
 
 .box.active {
@@ -102,9 +97,11 @@ a {
     font-weight: 400;
     flex-direction: column;
 }
+
 .clicked-order-container h2 {
     margin-bottom: .3em;
 }
+
 .clicked-order-container p {
     font-weight: 300;
     margin-bottom: .3em;
