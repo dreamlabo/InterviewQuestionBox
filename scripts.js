@@ -1,5 +1,5 @@
 const boxes = document.querySelectorAll(".box");
-const clickedItemOrderSection = document.getElementById('clicked-order');
+// const clickedItemOrderSection = document.getElementById('clicked-order');
 const ACTIVE_CLASS = 'active';
 const TIMER_VALUE = 750;
 const CLICK_TYPE = 'click';
@@ -44,7 +44,7 @@ function setArray(id) {
         return;
     }
     clickedBoxes.push(id);
-    appendBoxOrderSection(id);
+    // appendBoxOrderSection(id);
 }
 
 function unColorBoxes()  {
@@ -52,7 +52,7 @@ function unColorBoxes()  {
         const boxID = clickedBoxes.pop();
         const box = document.getElementById(boxID);
         box.classList.remove(ACTIVE_CLASS);
-        removeChild();
+        // removeChild();
 
         setTimeout(unColorBoxes, TIMER_VALUE);
     }
