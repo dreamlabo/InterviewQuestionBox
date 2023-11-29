@@ -41,6 +41,7 @@ a {
     background: var(--clr-200);
     color: var(--clr-700);
     box-shadow: var(--box-shadow);
+    z-index: 100;
 }
 
 .header-flex {
